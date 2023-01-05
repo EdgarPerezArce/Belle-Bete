@@ -1,0 +1,10 @@
+#pets{
+    display: grid;
+    grid-template-columns:33% 33% 33%;
+    column-gap: 0;
+}
+.petCard{
+    background-color: lightblue;
+    border: 1px solid grey;
+    padding:10px;
+}
