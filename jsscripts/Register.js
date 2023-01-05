@@ -1,8 +1,8 @@
 
 let petSalon={
-    name:"Bella Bete",
+    name:"Belle Bete",
     address:{
-        street:"Bella",
+        street:"Belle",
         zip: 33510,
         number:500
     },

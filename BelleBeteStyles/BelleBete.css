@@ -1,0 +1,29 @@
+.shop-name-text{
+    font-size: 75px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    height:47px;
+    background-color: lightblue;
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+   
+
+}
+nav.menu{
+    display: flex;
+    justify-content: space-between;/*horizontally*/
+    align-items: center;/*vertically*/
+    background-color: lightblue;
+    height: 35px;
+    padding: 8px 10px;
+
+}
