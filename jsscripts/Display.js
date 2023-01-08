@@ -10,6 +10,8 @@ function displayPetCards(){
             <p>Age: ${pet.age}</p>
             <p>Breed: ${pet.breed}</p>
             <p>Service: ${pet.service}</p>
+            <p>Owner Name: ${pet.ownerName}</P>
+            <p>Phone Number: ${pet.Phone}</P>
             <button onclick="deletePet(${pet.id});">Delete</button>
         </div>
         `;

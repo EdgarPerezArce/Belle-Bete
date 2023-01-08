@@ -21,7 +21,7 @@ function Pet(name,age,gender,breed,service,owner,phone){
     this.gender = gender;
     this.breed = breed;
     this. service = service;
-    this.ownername = owner; 
+    this.ownerName = owner; 
     this.Phone = phone;
     this.id=c++;
 }
@@ -66,7 +66,7 @@ function validation(thePet){
         validation=false;
         inputService.classList.add("alert-error");
     }
-    if(thePet.ownername==""){
+    if(thePet.ownerName==""){
         validation=false;
         inputOwnerName.classList.add("alert-error");
     }
@@ -79,7 +79,7 @@ function validation(thePet){
     return validation;
 }
 function register(){
-    let newPet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService);
+    let newPet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value,inputOwnerName.value,inputPhone.value);
     if(validation(newPet)==true){
         console.log(newPet.service.breed)
 
@@ -99,6 +99,8 @@ function clearForm(){
     inputGender.value = "";
     inputBreed.value = "";
     inputService.value = "";
+    inputOwnerName.value = "";
+    inputPhone.value = "";
 }
 function deletePet(id){
     console.log("deleting pet " + id);
