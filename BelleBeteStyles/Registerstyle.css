@@ -26,8 +26,8 @@ nav.menu{
 }
 #pets{
     display: grid;
-    grid-template-columns:33% 33% 33%;
-    column-gap: 0;
+    grid-template-columns:repeat(3,1fr);
+    column-gap: 150px;
 }
 .petCard{
     background-color: lightblue;

@@ -8,43 +8,46 @@
     <link rel="stylesheet" href="BelleBeteStyles/Registerstyle.css">
     <title>Belle Bete</title>
 </head>
-<body>
-    <div class="flex-container">
-        <div> 
-                <header class="shop-name-text">Belle Bete</header>
-       </div>  
-       <div>  
-       <nav>
-           <nav class="nav nav-pills flex-column flex-sm-row">
-               <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="BelleBete.html">Home Page</a>
-               <a class="flex-sm-fill text-sm-center nav-link" href="About.html">About</a>
-               <a class="flex-sm-fill text-sm-center nav-link" href="Services.html">Services</a>
-               <a class="flex-sm-fill text-sm-center nav-link" href="Register.html" >Register</a>
+<body background="bellephotos/dogtreats.jpg">
+    <div>
+        <div class="flex-container">
+            <p class="shop-name-text">Belle Bete</p>
+        </div>  
+        <div>  
+        
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="BelleBete.html">Home Page</a>
+                <a class="flex-sm-fill text-sm-center nav-link active" href="About.html">About</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="Services.html">Services</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="Register.html" >Register</a>
              </nav>
-       </nav>
-       </div>
+        
+        </div>
     <div class="container">
+        <br>
         <h2>Register a new pet</h2>
         <p class="text-end" id="info">here is the info</p>
-        <div class="mb=3">
+        <div class="mb-3">
             <label class="form-label">Name:</label>
             <input type="text" class="form-control" id="txtName">
         </div>
-        <div class="mb=3">
+        <div class="mb-3">
             <label class="form-label">Age:</label>
             <input type="text" class="form-control" id="txtAge">
         </div>
-        <div class="mb=3">
+        <div class="mb-3">
             <label class="form-label">Gender:</label>
             <input type="text" class="form-control" id="txtGender">
         </div>
-        <div class="mb=3">
+        <div class="mb-3">
             <label class="form-label">Breed:</label>
             <input type="text" class="form-control" id="txtBreed">
         </div>
-        <div class="mb=3">
+        <div class="mb-3">
             <label class="form-label">Service:</label>
             <select class="form-control" id="txtService">
+                <option
+                    value="">--select an option--</option>
                 <option value="grooming">Grooming</option>
                 <option value="Nails">Nails cut</option>
                 <option value="Vaccine">Vaccines</option>
@@ -53,13 +56,18 @@
 
         <button class="btn btn-dark" onclick="register();">Register</button>
 
-
+        <br>
+        <br>
     </div>
     
     <div id="pets">
         
     </div>
-
+    <!-- <div id="">
+        <table class="petTable">
+           
+          </table>
+    </div> -->
     <script src="jsscripts/Display.js"></script>
     <script src="jsscripts/Register.js"></script>
     

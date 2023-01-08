@@ -14,7 +14,7 @@ let petSalon={
         
     
 }
-
+let c=0;
 function Pet(name,age,gender,breed,service,owner,phone){
     this.name = name;
     this.age = age;
@@ -22,7 +22,8 @@ function Pet(name,age,gender,breed,service,owner,phone){
     this.breed = breed;
     this. service = service;
     this.ownername = owner; 
-    this.contactPhone = phone;
+    this.Phone = phone;
+    this.id=c++;
 }
 
 let inputName = document.getElementById("txtName");
@@ -30,16 +31,67 @@ let inputAge = document.getElementById("txtAge");
 let inputGender = document.getElementById("txtGender");
 let inputBreed = document.getElementById("txtBreed");
 let inputService = document.getElementById("txtService");
+let inputOwnerName = document.getElementById("txtOwnerName");
+let inputPhone = document.getElementById("txtPhone");
 
+function validation(thePet){
+    let validation=true;
+    
+    inputName.classList.remove("alert-error")
+    inputAge.classList.remove("alert-error")
+    inputGender.classList.remove("alert-error")
+    inputBreed.classList.remove("alert-error")
+    inputService.classList.remove("alert-error")
+    inputOwnerName.classList.remove("alert-error")
+    inputPhone.classList.remove("alert-error")
+    
+    if(thePet.name==""){
+        // alert("please enter the name");
+        validation=false;
+        inputName.classList.add("alert-error");
+    }
+    if(thePet.age==""){
+        validation=false;
+        inputAge.classList.add("alert-error");
+    }
+    if(thePet.gender==""){
+        validation=false;
+        inputGender.classList.add("alert-error");
+    }
+    if(thePet.breed==""){
+        validation=false;
+        inputBreed.classList.add("alert-error");
+    }
+    if(thePet.service==""){
+        validation=false;
+        inputService.classList.add("alert-error");
+    }
+    if(thePet.ownername==""){
+        validation=false;
+        inputOwnerName.classList.add("alert-error");
+    }
+    if(thePet.Phone==""){
+        validation=false;
+        inputPhone.classList.add("alert-error");
+    }
+    
+    
+    return validation;
+}
 function register(){
     let newPet = new Pet(inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService);
-    
+    if(validation(newPet)==true){
+        console.log(newPet.service.breed)
+
     petSalon.pets.push(newPet);
     
-    alert("You have " + petSalon.pets.length + " pets in the salon.");
+    // alert("You have " + petSalon.pets.length + " pets in the salon.");
     displayInfo();
     displayPetCards();
     clearForm();
+    }else{
+    alert("please complete the text");
+    }
 }
 function clearForm(){
     inputName.value ="";
@@ -47,6 +99,21 @@ function clearForm(){
     inputGender.value = "";
     inputBreed.value = "";
     inputService.value = "";
+}
+function deletePet(id){
+    console.log("deleting pet " + id);
+    let deleteIndex;
+
+        for(let i=0;i<petSalon.pets.length;i++){
+        let pet=petSalon.pets[i];
+        if(id==pet.id){
+            deleteIndex=i;
+    
+        }
+    }
+    document.getElementById(id).remove();
+    petSalon.pets.splice(deleteIndex,1);
+    displayInfo();
 }
 function displayInfo(){
     document.getElementById("info").innerHTML="You have " + petSalon.pets.length + " pets in the salon.";
