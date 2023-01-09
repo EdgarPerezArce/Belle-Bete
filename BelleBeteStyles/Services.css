@@ -1,0 +1,74 @@
+.shop-name-text{
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(207, 191, 171);
+    margin-bottom: -15px;
+}
+h2{
+    font-size: 55px;
+}
+p{
+    font-size: 30px;
+}
+.pet-services{
+    border-radius: 5px; /* 5px rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #b5e0ea;
+    width: 400px;
+    margin-left: 200px;
+    margin-top: 10px;
+    
+}
+.Specials{
+    border-radius: 5px; /* 5px rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: 'Dancing Script', cursive;
+    background-color: #b5e0ea;
+    padding-left: 15px;
+    width: 400px;
+    margin-left: 800px;
+    margin-top: -363px;
+    padding-bottom: 63px;
+    margin-bottom: 10px;
+    
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    font-size: 19px;
+    font-family: 'Dancing Script', cursive;
+    height:47px;
+    background-color: lightblue;
+    display:flex;
+    justify-content: space-between;
+    justify-content: center;
+    
+   
+
+}
+nav.menu{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: space-between;/*horizontally*/
+    align-items: center;/*vertically*/
+    background-color: lightblue;
+    height: 35px;
+    padding: 8px 10px;
+
+}
+marquee{
+    
+}
+img {
+    max-width: 350px;
+    border-radius: 5px; /* 5px rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+   }
+   .pet-services{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+   }

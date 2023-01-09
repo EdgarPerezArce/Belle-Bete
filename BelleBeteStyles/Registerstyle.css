@@ -1,12 +1,32 @@
 .shop-name-text{
     font-size: 75px;
     text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background-color: rgb(207, 191, 171);
+    margin-bottom: -15px;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+
+h4{
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+}
+button{
+    font-family: 'Dancing Script', cursive;
+    background-color: black;
+    color: white;
 }
 .flex-container {
     display: flex;
     flex-direction: column;
   }
   nav{
+    font-size: 19px;
+    font-family: 'Dancing Script', cursive;
     height:47px;
     background-color: lightblue;
     display:flex;
@@ -16,6 +36,8 @@
 
 }
 nav.menu{
+    
+    font-family: 'Dancing Script', cursive;
     display: flex;
     justify-content: space-between;/*horizontally*/
     align-items: center;/*vertically*/
@@ -24,16 +46,38 @@ nav.menu{
     padding: 8px 10px;
 
 }
+.mb-3{
+    font-family: 'Dancing Script', cursive;
+}
+.btn{
+    font-family: 'Dancing Script', cursive;
+}
+.div .pets{
+    font-family: 'Dancing Script', cursive;
+}
 #pets{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    column-gap: 150px;
+    column-gap: 50px;
+    padding: 2px 16px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    
 }
 .petCard{
+    border-radius: 5px; /* 5px rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     background-color: lightblue;
     border: 1px solid grey;
-    padding:10px;
+    padding:20px;
+    margin-right: 150px ;
+
 }
+.petCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 .alert-error{
     border:1px solid red;
 }
+

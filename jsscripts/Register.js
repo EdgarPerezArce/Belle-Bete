@@ -2,9 +2,9 @@
 let petSalon={
     name:"Belle Bete",
     address:{
-        street:"Belle",
+        street:"465 BelleAir Ave. ",
         zip: 33510,
-        number:500
+        number:465
     },
     hours:{
         open:"9:00 am",
