@@ -20,31 +20,53 @@ function displayPetCards(){
 
     petSection.innerHTML=card;
 }
-// function displayTable(){
-//         //select the section by id
-//         let petSection = document.getElementById("pets");
-//         let table="";
-//         //travel the array
-//         for(let i=0; i < petSalon.pets.length;i++){
-//             let pet = petSalon.pets[i];
-//             //create the template string
-//             table += `
-//             <table id=${pet.id} class="petTable">
-//                 <h4>${pet.name}</h4>
-//                 <td>Age: ${pet.age}</td>
-//                 <td>Breed: ${pet.breed}</td>
-//                 <td>Service: ${pet.service}</td>
-//                 <button onclick="deletePet(${pet.id});">Delete</button>
-//             </table>
-//             `;
-//             console.log(table);
-//         }
-    
-//         //insert the tmp intp the petSections
-//         petSection.innerHTML=table;
-// }
-
-
-function displayInfo(){
-    document.getelementByID("info").innerHTML="You have " + petSalon.pets.length + "pets in the salon.";
+function displayTable(){
+        //select the section by id
+        let petTable = document.getElementById("guest-table");
+        let table="";
+        //travel the array
+        for(let i=0; i < petSalon.pets.length;i++){
+            {
+            let pet = petSalon.pets[i];
+            //create the template string
+            table += `
+                <td>
+                <td>${pet.name}</td>
+                <td>Age: ${pet.age}</td>
+                <td>Breed: ${pet.breed}</td>
+                <td>Service: ${pet.service}</td>
+                <td>Owner Name: ${pet.ownerName}</td>
+            <td>Phone Number: ${pet.Phone}</td>
+            </tr>
+            `;
+            }
+           
+        }
+        document.getElementById("guest-table").innerHTML = table;
+        //insert the tmp intp the petSections
+        petTable.innerHTML=table;
 }
+displayTable();
+{/* <button onclick="deletePet(${pet.id});">Delete</button> */}
+                
+// function displayPets(){
+//     let petTable = document.getElementById("");
+//     let table="";
+
+//     for(let i=0; i < petSalon.pets.length;i++){
+//         let pet = petSalon.pets[i];
+        
+//         {
+//         table+=`<tr>
+//             <td>${pet.name}</td>
+//             <td>${pet.age}</td>
+//             </tr>
+//             `
+//         }
+        
+//     }
+//     document.getElementById("guest-table").innerHTML = table;
+// }  
+
+// displayPets();
+

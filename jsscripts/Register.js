@@ -88,11 +88,16 @@ function register(){
     // alert("You have " + petSalon.pets.length + " pets in the salon.");
     displayInfo();
     displayPetCards();
+    displayTable();
     clearForm();
     }else{
     alert("please complete the text");
     }
 }
+function myFunction() {
+    document.getElementById("guest-table").deleteRow(0);
+    
+  }
 function clearForm(){
     inputName.value ="";
     inputAge.value = "";
@@ -131,22 +136,9 @@ function init(){
     petSalon.pets.push(scooby,spike,witchy);
     displayInfo();
     displayPetCards();
+    displayTable();
 
 
 }
 window.onload = init;
 
-// function displaySalonInfo(){
-//     let tmp=`
-//     <p> Welcome to the ${petSalon.name} we are open from ${petSalon.hours.open}</p>`;
-//     document.getElementById("info").innerHTML=tmp;
-// }
-//  function displayInfo(){
-
-//  }
-
-// function init(){
-    
-// }
-
-// window.onload = init;
