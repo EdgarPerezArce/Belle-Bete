@@ -36,7 +36,7 @@ function displayTable(){
                 <td>Breed: ${pet.breed}</td>
                 <td>Service: ${pet.service}</td>
                 <td>Owner Name: ${pet.ownerName}</td>
-            <td>Phone Number: ${pet.Phone}</td>
+            <td>Phone Number: ${pet.Phone} <button onclick="myFunction()">Delete</td>
             </tr>
             `;
             }
